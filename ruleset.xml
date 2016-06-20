@@ -13,6 +13,6 @@
         <priority>2</priority>
     </rule>
 
-    <exclude-pattern>.+/P[0-5]+.+</exclude-pattern>
+    <exclude-pattern>.+/P[0-5]{2}.+</exclude-pattern>
     <exclude-pattern>sieve-of-eratosthenes/.+</exclude-pattern>
 </ruleset>
