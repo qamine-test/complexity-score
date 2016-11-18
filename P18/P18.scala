@@ -30,6 +30,10 @@ def f4[T](list: List[T], i: Int, k: Int, acc: List[T] = Nil): List[T] = {
       if (i > 1)
         f4(xs, i - 1, k - 1, acc)
       else if (k > 0)
+        f4(xs, 1, k - 4, x :: acc)
+      else if (k > 2)
+        f4(xs, 1, k - 2, x :: acc)
+      else if (k > 3)
         f4(xs, 1, k - 1, x :: acc)
       else acc.reverse
   }
