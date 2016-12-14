@@ -1,0 +1,17 @@
+---
+engines:
+  checkstyle:
+    enabled: true
+    exclude_paths:
+      - "P01/P01.java"
+  duplication:
+    enabled: true
+    exclude_paths:
+      - "sieve-of-eratosthenes/*.py"
+  metrics:
+    enabled: true
+    exclude_paths:
+      - "*.scala"
+exclude_paths:
+  - "sieve-of-eratosthenes/sieve.scala"
+  - "new/**/*.*"
